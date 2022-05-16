@@ -5,22 +5,34 @@
 		<link rel="icon" href="/popupstore/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/popupstore/_app/start-6a26bfc8.js">
-	<link rel="modulepreload" href="/popupstore/_app/chunks/index-c3650d4a.js">
-	<link rel="modulepreload" href="/popupstore/_app/layout.svelte-8187eef2.js">
-	<link rel="modulepreload" href="/popupstore/_app/pages/test.svelte-1b4e8d4d.js">
+	<link rel="modulepreload" href="/popupstore/_app/start-e2844bb3.js">
+	<link rel="modulepreload" href="/popupstore/_app/chunks/index-07108127.js">
+	<link rel="modulepreload" href="/popupstore/_app/layout.svelte-899c4ff7.js">
+	<link rel="modulepreload" href="/popupstore/_app/pages/test.svelte-14a0c132.js">
 	</head>
 	<body>
-		<div id="svelte">
+		<div>
 
 
-<h1>wow this is test page</h1>
+<button style="font-size:xx-large;"><a href="/popupstore">back</a></button>
+<h1>이것은 영수증</h1>
+<h2>상품목록</h2>
 
 
-		<script type="module" data-hydrate="1dh1yba">
-		import { start } from "/popupstore/_app/start-6a26bfc8.js";
+<form><select name="prd"><option value="상품선택" selected="selected">상품선택</option><option value="널담 병아리콩스낵">널담 병아리콩스낵</option><option value="널담 견과초코볼">널담 견과초코볼</option><option value="널담 제로스파클링">널담 제로스파클링</option><option value="널담 브라우니">널담 브라우니</option><option value="널담 마들렌">널담 마들렌</option></select>
+
+<select name="flavor"><option value="없음" selected="selected">없음</option></select>
+
+<button type="submit">추가</button></form>
+
+
+<div id="thisislist"></div>
+
+
+		<script type="module" data-hydrate="1cdcgun">
+		import { start } from "/popupstore/_app/start-e2844bb3.js";
 		start({
-			target: document.querySelector('[data-hydrate="1dh1yba"]').parentNode,
+			target: document.querySelector('[data-hydrate="1cdcgun"]').parentNode,
 			paths: {"base":"/popupstore","assets":"/popupstore"},
 			session: {},
 			route: true,
@@ -30,8 +42,8 @@
 				status: 200,
 				error: null,
 				nodes: [
-					import("/popupstore/_app/layout.svelte-8187eef2.js"),
-						import("/popupstore/_app/pages/test.svelte-1b4e8d4d.js")
+					import("/popupstore/_app/layout.svelte-899c4ff7.js"),
+						import("/popupstore/_app/pages/test.svelte-14a0c132.js")
 				],
 				params: {},
 				routeId: "test"
