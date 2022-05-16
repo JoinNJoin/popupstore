@@ -1,2 +1,11 @@
+<script>
+import products from "../products.js";
+
+
+
+let prds = products.products;
+
+</script>
+
 <h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<p>{prds[0]["id"]}</p>
