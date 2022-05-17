@@ -5,10 +5,11 @@
 		<link rel="icon" href="/popupstore/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/popupstore/_app/start-e2844bb3.js">
-	<link rel="modulepreload" href="/popupstore/_app/chunks/index-07108127.js">
-	<link rel="modulepreload" href="/popupstore/_app/layout.svelte-899c4ff7.js">
-	<link rel="modulepreload" href="/popupstore/_app/pages/test.svelte-14a0c132.js">
+	<link rel="stylesheet" href="/popupstore/_app/assets/pages/test.svelte-c5a9e516.css">
+	<link rel="modulepreload" href="/popupstore/_app/start-440d6b30.js">
+	<link rel="modulepreload" href="/popupstore/_app/chunks/index-a7ad466d.js">
+	<link rel="modulepreload" href="/popupstore/_app/layout.svelte-87f69312.js">
+	<link rel="modulepreload" href="/popupstore/_app/pages/test.svelte-c5c9789d.js">
 	</head>
 	<body>
 		<div>
@@ -21,18 +22,23 @@
 
 <form><select name="prd"><option value="상품선택" selected="selected">상품선택</option><option value="널담 병아리콩스낵">널담 병아리콩스낵</option><option value="널담 견과초코볼">널담 견과초코볼</option><option value="널담 제로스파클링">널담 제로스파클링</option><option value="널담 브라우니">널담 브라우니</option><option value="널담 마들렌">널담 마들렌</option></select>
 
-<select name="flavor"><option value="없음" selected="selected">없음</option></select>
+    <select name="flavor"><option value="없음" selected="selected">없음</option></select>
 
-<button type="submit">추가</button></form>
+    <input required type="number" name="count" minlength="1" maxlength="3" size="5" value="1">
+  
+    <button>추가</button></form>
 
 
-<div id="thisislist"></div>
+<div id="thisislist" class="svelte-1rdp3z3"><p>결제금액 : 0원</p>
+    <button>ahahaha</button></div>
+
+<div id="output"></div>
 
 
-		<script type="module" data-hydrate="1cdcgun">
-		import { start } from "/popupstore/_app/start-e2844bb3.js";
+		<script type="module" data-hydrate="3yqqgp">
+		import { start } from "/popupstore/_app/start-440d6b30.js";
 		start({
-			target: document.querySelector('[data-hydrate="1cdcgun"]').parentNode,
+			target: document.querySelector('[data-hydrate="3yqqgp"]').parentNode,
 			paths: {"base":"/popupstore","assets":"/popupstore"},
 			session: {},
 			route: true,
@@ -42,8 +48,8 @@
 				status: 200,
 				error: null,
 				nodes: [
-					import("/popupstore/_app/layout.svelte-899c4ff7.js"),
-						import("/popupstore/_app/pages/test.svelte-14a0c132.js")
+					import("/popupstore/_app/layout.svelte-87f69312.js"),
+						import("/popupstore/_app/pages/test.svelte-c5c9789d.js")
 				],
 				params: {},
 				routeId: "test"
