@@ -1,0 +1,40 @@
+button {
+	margin-right: 30px;
+	width: 5vw;
+	height: 5vh;
+}
+
+td {
+	text-align: center;
+}
+tbody td,
+tfoot td {
+	border-top: 1px solid black;
+}
+
+.bilge {
+	width: 79mm;
+	padding: 0px 5mm;
+	text-align: center;
+}
+.bilge img,
+table {
+	width: 100%;
+}
+.bilge .top_header span:nth-child(1) {
+	font-weight: bold;
+}
+.bilge .top_header span:nth-child(2) {
+	font-size: 10px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+}
+.bilge .top_header {
+	display: flex;
+	justify-content: space-between;
+}
+.top_header img {
+	height: 3mm;
+	width: auto;
+}

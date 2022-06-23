@@ -1,0 +1,59 @@
+<!-- <script>
+	const tbody = document.querySelector('div#totalProducts');
+
+
+
+	const observer2 = new MutationObserver((mutations) => {
+		let tr = document.querySelectorAll('tbody.option_products > tr');
+		console.log(tr);
+
+		tr.forEach((e) => {
+			let priceSpan = e.querySelector('td.right span.ec-front-product-item-price');
+			let price = priceSpan.textContent.slice(0, -1);
+			let salePrice = parseInt(price) - sale;
+			priceSpan.innerText = `${toString(salePrice)}`; //요놈이 문제, 무한으로 즐겨요
+			console.log(priceSpan, price, sale);
+		});
+	});
+
+	const config2 = {
+		attributes: true,
+		childList: true,
+		characterData: true,
+		subtree: true
+	};
+
+	observer2.observe(tbody, config2);
+</script> -->
+
+<script>
+	//할인 금액 가져오기
+	let sale = parseInt(
+		document
+			.querySelector('#span_product_price_mobile_text > span')
+			.textContent.slice(2, -5)
+			.replace(',', '')
+	);
+
+	let li = document.querySelectorAll('tr.xans-product-option li');
+	li.forEach((e) => {
+		e.addEventListener('click', () => {
+			changePrice();
+		});
+	});
+
+	async function changePrice() {
+		let tr = await document.querySelectorAll('tbody.option_products > tr');
+		console.log(tr);
+
+		tr.forEach((e) => {
+			let priceSpan = e.querySelector('td.right span.ec-front-product-item-price');
+			let price = priceSpan.textContent.slice(0, -1).replace(',', '');
+			let salePrice = (parseInt(price) - sale).toLocaleString();
+			priceSpan.innerText = `${salePrice}원`; //요놈이 문제, 무한으로 즐겨요
+			console.log(priceSpan, price, sale, salePrice);
+		});
+	}
+
+	console.log('sdfds');
+</script>

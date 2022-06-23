@@ -13,6 +13,9 @@ const config = {
 		paths: {
 			// change below to your repo name
 			base: dev ? '' : '/popupstore'
+		},
+		prerender: {
+			default: true
 		}
 		// hydrate the <div id="svelte"> element in src/app.html
 	}
